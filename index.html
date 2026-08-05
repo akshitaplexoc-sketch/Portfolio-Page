@@ -1,129 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akshita Agrawal | Portfolio</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f5f7fb;
-        color: #222;
-        line-height: 1.6;
-      }
 
-      header {
-        background: linear-gradient(135deg, #2d3e50, #4f6f8f);
-        color: white;
-        padding: 50px 20px;
-        text-align: center;
-      }
+<head>
 
-      h1 {
-        margin: 0 0 10px;
-      }
+<meta charset="UTF-8">
 
-      nav {
-        background: #ffffff;
-        padding: 12px;
-        text-align: center;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-      }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      nav a {
-        margin: 0 10px;
-        color: #2d3e50;
-        text-decoration: none;
-        font-weight: bold;
-      }
+<title>Akshita Agrawal | Portfolio</title>
 
-      main {
-        max-width: 900px;
-        margin: 20px auto;
-        padding: 0 15px 30px;
-      }
+<!-- Google Font -->
 
-      section {
-        background: white;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
-      .skills span {
-        display: inline-block;
-        background: #eaf2ff;
-        color: #2d3e50;
-        padding: 8px 12px;
-        margin: 5px;
-        border-radius: 20px;
-      }
+<!-- Font Awesome -->
 
-      .project-list li {
-        margin-bottom: 8px;
-      }
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-      footer {
-        text-align: center;
-        padding: 20px;
-        color: #666;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Akshita Agrawal</h1>
-      <p>Web Developer | Student | Problem Solver</p>
-    </header>
+<link rel="stylesheet" href="styles.css">
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+</head>
 
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I am a beginner web developer who enjoys creating simple, clean, and
-          useful websites. I love learning new technologies and turning ideas
-          into real projects.
-        </p>
-      </section>
+<body>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul class="project-list">
-          <li>Personal Portfolio Website</li>
-          <li>Netflix EDA Dashboard</li>
-          <li>Tata RAG Sustainability AI Assistant</li>
-        </ul>
-      </section>
+<!-- ================= NAVBAR ================= -->
 
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>Python</span>
-          <span>Git</span>
-        </div>
-      </section>
+<header>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: akshita@example.com</p>
-        <p>GitHub: github.com/akshita</p>
-      </section>
-    </main>
+<div class="logo">
 
-    <footer>
-      <p>© 2026 Akshita Agrawal</p>
-    </footer>
-  </body>
+Akshita.
+
+</div>
+
+<nav>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#education">Education</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<a href="resume.pdf" class="resume-btn">
+
+Resume
+
+</a>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<p class="hello">
+
+👋 Hello, I'm
+
+</p>
+
+<h1>
+
+Akshita Agrawal
+
+</h1>
+
+<h2>
+
+Computer Science Student
+
+</h2>
+
+<p>
+
+Passionate B.Tech student in Computer Science Engineering with 
+a focus on Artificial Intelligence & Data Science.
+
+I enjoy creating beautiful responsive websites,
+learning modern technologies and building real-world projects.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn primary">
+
+View Projects
+
+</a>
+
+<a href="resume.pdf" class="btn secondary-btn">
+
+Download Resume
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/MyImage-1764258670-05.jpg" alt="Akshita">
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="title">
+
+<h2>About Me</h2>
+
+<p>Get to know me better</p>
+
+</div>
+
+<div class="about-container">
+
+
+
+<div class="about-text">
+
+<h3>Who am I?</h3>
+
+<p>
+
+I am a Computer Science Engineering student pursuing
+B.Tech (Honours) in Artificial Intelligence & Data Science.
+
+I enjoy designing clean websites,
+solving programming problems and learning modern technologies.
+
+</p>
+
+<p>
+
+Currently I am improving my skills in
+HTML, CSS, JavaScript, React, Python,
+SQL and Git.
+
+</p>
+
+<div class="stats">
+
+<div>
+
+<h2>3+</h2>
+
+<p>Projects</p>
+
+</div>
+
+<div>
+
+<h2>10+</h2>
+
+<p>Skills</p>
+
+</div>
+
+<div>
+
+<h2>100%</h2>
+
+<p>Dedication</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= EDUCATION ================= -->
+
+<section id="education">
+
+<div class="title">
+
+<h2>Education</h2>
+
+<p>My Academic Journey</p>
+
+</div>
+
+<div class="education-card">
+
+<h3>B.Tech in Computer Science Engineering</h3>
+
+<p>Silver Oak University</p>
+
+<p>2024 - Present</p>
+
+</div>
+<div class="education-card">
+  <h3>B.Tech Honours</h3>
+  <p><strong>Artificial Intelligence & Data Science</strong></p>
+  <p>Silver Oak University</p>
+  <p>2026 - Present</p>
+</div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+<div class="title">
+
+<h2>My Skills</h2>
+
+<p>Technologies I work with</p>
+
+</div>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+
+<i class="fab fa-html5"></i>
+
+<p>HTML</p>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fab fa-css3-alt"></i>
+
+<p>CSS</p>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fab fa-js"></i>
+
+<p>JavaScript</p>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fab fa-react"></i>
+
+<p>React</p>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fab fa-python"></i>
+
+<p>Python</p>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fas fa-database"></i>
+
+<p>SQL</p>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fab fa-git-alt"></i>
+
+<p>Git</p>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fab fa-github"></i>
+
+<p>GitHub</p>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fab fa-java"></i>
+
+<p>Java</p>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fas fa-code"></i>
+
+<p>C++</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+<div class="title">
+
+<h2>Projects</h2>
+
+<p>Some of my recent work</p>
+
+</div>
+
+<div class="project-container">
+
+<div class="project-card">
+
+<h3>🌐 Personal Portfolio</h3>
+
+<p>
+
+Designed and developed a fully responsive personal portfolio
+using HTML, CSS and JavaScript with a clean modern interface.
+
+</p>
+
+<div class="tech">
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>JavaScript</span>
+
+</div>
+
+<div class="project-btns">
+
+<a href="#" class="project-btn">
+
+GitHub
+
+</a>
+
+<a href="#" class="project-btn">
+
+Live Demo
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<h3>📊 Netflix EDA Dashboard</h3>
+
+<p>
+
+Performed Exploratory Data Analysis on Netflix dataset
+using Python, Pandas and Matplotlib to visualize trends.
+
+</p>
+
+<div class="tech">
+
+<span>Python</span>
+
+<span>Pandas</span>
+
+<span>Matplotlib</span>
+
+</div>
+
+<div class="project-btns">
+
+<a href="#" class="project-btn">
+
+GitHub
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<h3>🤖 Tata RAG AI Sustainability Assistant</h3>
+
+<p>
+
+Developed an AI assistant capable of answering sustainability
+related queries using Retrieval-Augmented Generation (RAG).
+
+</p>
+
+<div class="tech">
+
+<span>Python</span>
+
+<span>AI</span>
+
+<span>RAG</span>
+
+</div>
+
+<div class="project-btns">
+
+<a href="#" class="project-btn">
+
+GitHub
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="title">
+
+<h2>Contact Me</h2>
+
+<p>Let's connect and build something amazing!</p>
+
+</div>
+
+<div class="contact-box">
+
+<div class="contact-item">
+
+<i class="fas fa-envelope"></i>
+
+<div>
+
+<h3>Email</h3>
+
+<p>akshitaa323@example.com</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<i class="fab fa-linkedin"></i>
+
+<div>
+
+<h3>LinkedIn</h3>
+
+<p>linkedin.com/in/akshita-agarwal-a65b34329/</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<i class="fab fa-github"></i>
+
+<div>
+
+<h3>GitHub</h3>
+
+<p>github.com/akshitaplexoc-sketch</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>Akshita Agrawal</h3>
+
+<p>
+  Let's connect and build something amazing!🚀
+</p>
+
+<div class="social">
+
+<a href="#">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="#">
+<i class="fas fa-envelope"></i>
+</a>
+
+</div>
+
+<p>
+© 2026 Akshita Agrawal | All Rights Reserved
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
