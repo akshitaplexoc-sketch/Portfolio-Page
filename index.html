@@ -20,6 +20,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <link rel="stylesheet" href="styles.css">
 
+<link rel="icon" href="favicon.ico">
+
 </head>
 
 <body>
@@ -35,7 +37,7 @@ Akshita.
 </div>
 
 <nav>
-
+<button class="menu-btn"> ☰ </button>
 <ul class="nav-links">
 
 <li><a href="#home">Home</a></li>
@@ -54,10 +56,15 @@ Akshita.
 
 </nav>
 
-<a href="resume.pdf" class="resume-btn">
+<button id="theme-toggle">
+    <i class="fas fa-moon"></i>
+</button>
 
-Resume
-
+<a href="resume.pdf"
+   class="resume-btn"
+   target="_blank"
+   download="resume.pdf">
+    <i class="fas fa-file-pdf"></i> Resume
 </a>
 
 </header>
@@ -81,9 +88,7 @@ Akshita Agrawal
 </h1>
 
 <h2>
-
-Computer Science Student
-
+<span id="typing"></span>
 </h2>
 
 <p>
@@ -124,7 +129,7 @@ Download Resume
 
 <!-- ================= ABOUT ================= -->
 
-<section id="about">
+<section id="about" class="reveal">
 
 <div class="title">
 
@@ -195,7 +200,7 @@ SQL and Git.
 </section>
 <!-- ================= EDUCATION ================= -->
 
-<section id="education">
+<section id="education" class="reveal">
 
 <div class="title">
 
@@ -225,7 +230,7 @@ SQL and Git.
 
 <!-- ================= SKILLS ================= -->
 
-<section id="skills">
+<section id="skills" class="reveal">
 
 <div class="title">
 
@@ -323,7 +328,7 @@ SQL and Git.
 
 <!-- ================= PROJECTS ================= -->
 
-<section id="projects">
+<section id="projects"  class="reveal">
 
 <div class="title">
 
@@ -448,14 +453,39 @@ GitHub
 <section id="contact">
 
 <div class="title">
-
 <h2>Contact Me</h2>
-
 <p>Let's connect and build something amazing!</p>
-
 </div>
 
 <div class="contact-box">
+
+<form id="contact-form">
+
+<input
+type="text"
+id="name"
+name="from_name"
+placeholder="Enter your Name"
+required>
+
+<input
+type="email"
+id="email"
+name="from_email"
+placeholder="Enter your Email"
+required>
+
+<textarea
+id="message"
+name="message"
+placeholder="Write your Message"
+required></textarea>
+
+<button type="submit" class="btn primary">
+Send Message
+</button>
+
+</form>
 
 <div class="contact-item">
 
@@ -465,7 +495,11 @@ GitHub
 
 <h3>Email</h3>
 
-<p>akshitaa323@example.com</p>
+<p>
+<a href="mailto:akshita.plexoc@gmail.com">
+akshita.plexoc@gmail.com
+</a>
+</p>
 
 </div>
 
@@ -479,7 +513,14 @@ GitHub
 
 <h3>LinkedIn</h3>
 
-<p>linkedin.com/in/akshita-agarwal-a65b34329/</p>
+<p>
+<a href="https://linkedin.com/in/akshita-agarwal-a65b34329"
+target="_blank">
+
+linkedin.com/in/akshita-agarwal-a65b34329
+
+</a>
+</p>
 
 </div>
 
@@ -493,7 +534,14 @@ GitHub
 
 <h3>GitHub</h3>
 
-<p>github.com/akshitaplexoc-sketch</p>
+<p>
+<a href="https://github.com/akshitaplexoc-sketch"
+target="_blank">
+
+github.com/akshitaplexoc-sketch
+
+</a>
+</p>
 
 </div>
 
@@ -530,11 +578,17 @@ GitHub
 </div>
 
 <p>
-© 2026 Akshita Agrawal | All Rights Reserved
+© <span id="year"></span> Akshita Agrawal | All Rights Reserved
 </p>
-
 </footer>
 
+<!-- Scroll To Top Button -->
+
+<button id="topBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 
 </body>
